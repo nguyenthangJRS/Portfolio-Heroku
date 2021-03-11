@@ -1,0 +1,94 @@
+.footer , .footer__contact,.footer__item,.email,.social__contact,.social__item{
+    display: flex;
+
+}
+
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background: #2d3436;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.footer__contact{
+    flex-direction: column;
+    list-style: none;
+    width: 260px;
+}
+.footer__item{
+    color: white;
+    justify-content: space-between;
+}
+/* .footer__item span:nth-child(1){
+    margin-right:50px;
+} */
+.footer__item + .footer__item{
+    margin-top: 10px;
+}
+.email{
+    flex-direction: column;
+}
+.form__input{
+    margin-top: 15px;
+    
+}
+.form__input input{
+    outline: none;
+    border: 1px solid;
+  
+
+}
+.form__input input:focus{
+    border-color: #7bed9f;
+}
+.social__contact{
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 0;
+    
+}
+.social__item + .social__item{
+    margin-left: 10px;
+}
+.social__item{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    transition: all .3s ease-in-out;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+
+    
+}
+.social__item.tweet , .social__item.instagram{
+    /* pointer-events: none; */
+}
+.social__item:hover{
+    transform: translateY(-10px) ;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+    
+}
+
+.face:hover{
+    background: #0084ff;
+}
+.git:hover{
+    background: #fdcb6e;
+}
+.line:hover{
+    background: #7bed9f;
+}
+
+.tweet:hover{
+    background: #55acee;
+    opacity: 0.5;
+}
+.instagram:hover{
+    background: #e4405f;
+    opacity: 0.5;
+}
